@@ -9,13 +9,18 @@ import Red from './red';
 import Green from './green';
 import Blue from './blue';
 import Violet from './violet';
+import Indigo from './indigo';
+
 
 class Rainbow extends React.Component {
   render() {
     return (
       <div>
         <h1>Rainbow Router!</h1>
-        {/* Your links should go here */}
+        <NavLink to='/red' >Red</NavLink>
+        <NavLink to='/green' >Green</NavLink>
+        <NavLink to='/blue' >Blue</NavLink>
+        <NavLink to='/violet' >Violet</NavLink>
 
         <div id="rainbow">
           <Route path="/red" component={Red} />
